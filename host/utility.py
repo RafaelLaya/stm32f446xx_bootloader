@@ -606,25 +606,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# Make UART connection faster
-
-# PROJECT IDEA: OTA PROGRAMMER OVER GSM UART MODULE AND A GUI
-# USEFUL BECAUSE:
-#   No need for dependencies
-#   Educational purposes
-#   Can make a wrapper in command line
-#   Not as painful as ST's
-#warning about disabling protections causing a mass erase if RW
-
-
-# environemnt variable STLINK_CLI
-# VECTOR TABLE OFFSET
-# FLASH APP AND BOOTLOADER ON CORRECT PLACES
-# OPTIMIZE O1 BOOTLOADER
-# linker SCRIPT FOR BOTH
-
-# study compiler design
-
-# time.sleep
-# improve sync()
