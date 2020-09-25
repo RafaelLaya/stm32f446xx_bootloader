@@ -16,6 +16,7 @@ An example application can be found under example/ and the bootloader is under b
 
 # Usage Example
 See host/usage.txt where the example records the following interaction:
+
 0. Go into bootloader mode by pressing the reset button and the user button. Then executes utility.py
 1. Prints the bootloader version
 2. Prints supported command codes
