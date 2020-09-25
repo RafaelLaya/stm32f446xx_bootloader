@@ -15,7 +15,7 @@ python3 utility.py -d /dev/ttyS6 -b 115200
 An example application can be found under example/ and the bootloader is under bootloader_stm32f446xx. In addition, the host utility is under host/
 
 # Usage Example
-See host/usage.txt where the example goes through the following sequence:
+See host/usage.txt where the example records the following interaction:
 0. Go into bootloader mode by pressing the reset button and the user button. Then executes utility.py
 1. Prints the bootloader version
 2. Prints supported command codes
