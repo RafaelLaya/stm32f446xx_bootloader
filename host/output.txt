@@ -1,0 +1,378 @@
+$ wc -c example.bin 
+8612 example.bin
+$ python3 utility.py -d /dev/ttyS6 -b 115200
+Success opening the serial port
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 1
+The Bootloader version is 1.1
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 2
+Command 0x51:BL_COMMAND_GET_VERSION is supported
+Command 0x52:BL_COMMAND_GET_HELP is supported
+Command 0x53:BL_COMMAND_GET_CID is supported
+Command 0x54:BL_COMMAND_GET_RDP_STATUS is supported
+Command 0x55:BL_COMMAND_GO_TO_ADDR is supported
+Command 0x56:BL_COMMAND_FLASH_ERASE is supported
+Command 0x57:BL_COMMAND_MEM_WRITE is supported
+Command 0x58:BL_COMMAND_EN_RW_PROTECT is supported
+Command 0x59:BL_COMMAND_DIS_RW_PROTECTION is supported
+Command 0x5a:BL_COMMAND_READ_SECTOR_STATUS is supported
+Command 0x5b:BL_COMMAND_MEM_READ is supported
+Command 0x5c:BL_COMMAND_GO_TO_APP is supported
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 3
+The chip id is 0x421
+The revision id is 0x1000
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 4
+There is no Read Protection
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 6
+Enter first sector to erase (0-7)> 1         
+Number of sectors to erase (1 <= initial+number <= 8) > 1
+Erase was executed
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 8
+Enter base address to write the binary file > 0x08004000
+Enter path to binary file > example.bin
+Data has been uploaded
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 9
+Select the protection type:
+        1. Read-write protection
+        2. Write protection
+Protection type > 2
+Enter the number of sectors to protect > 1
+Which is the sector 0 to protect (Choose a value inside [0, 7])? > 0
+Protection was enabled
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 11
+===== Protection Status =====
+RDP Protection Level is 0
+Protection Mode is Write Protection
+Sector 0 is Write protected
+Sector 1 is not Write protected
+Sector 2 is not Write protected
+Sector 3 is not Write protected
+Sector 4 is not Write protected
+Sector 5 is not Write protected
+Sector 6 is not Write protected
+Sector 7 is not Write protected
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 13
+Enter path for storage > otp.bin
+Data has been downloaded
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 12
+Enter address > 0x08004000
+Enter length > 8612
+Enter path for storage > example_copy.bin
+Data has been downloaded
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 14
+Enter address > 0x08004000
+Command was executed
+Press any key to continue...
+
+
++============================================================+
+|                           Menu                             |
+|          STM32F4 BootLoader Host Utility Version 1.0       |
++============================================================+
+
+
+Choose a command: 
+        0. Exit
+        1. Get Version
+        2. Get Help
+        3. Get Chip ID
+        4. Get RDP Status
+        5. Go to Address
+        6. Flash Erase
+        7. Flash Mass Erase
+        8. Memory Write
+        9. Enable RW Protection
+        10. Disable RW Protection
+        11. Read Sector Protection Status
+        12. Memory Read
+        13. Read OTP
+        14. Go to an application whose base address is known
+Enter your command: 
+> 0
+Exiting...
+$ diff example.bin example_copy.bin
+$
